@@ -6,10 +6,15 @@ Just a list of commands and settings for whenever I do a fresh macOS installatio
 A few are taken from the macOS-Security-and-Privacy-Guide:
 
 Disable Spotlight Bing Search Suggestions in System Preferences, as well as Safari Suggestions in Safari Preferences.
+
 Disable opening "Safe" files in Safari.
+
 Enable the Develop menu safari( useful for opening pages in Chrome, go to Develop-> Open Page With)
+
 Enable Secure Keyboard Entry in Terminal.
+
 Disable loading Remote Images in Mail
+
 Disable Captive Portal:
 ```
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
@@ -94,5 +99,7 @@ Click Home folder, then the View Options dialog box, select Show Library Folder.
 ## Software
 
 Install brew from http://brew.sh
+
 Install borgbackup from brew
+
 If you have a mouse with side buttons, install Sensible Side Buttons
