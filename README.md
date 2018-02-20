@@ -58,7 +58,7 @@ defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile
 
 Power Chime whenever your Power Supply is plugged in:
 ```
-Power Chime	defaults write com.apple.PowerChime ChimeOnAllHardware -bool true;open /System/Library/CoreServices/PowerChime.app &
+defaults write com.apple.PowerChime ChimeOnAllHardware -bool true;open /System/Library/CoreServices/PowerChime.app &
 ```
 
 Stop Photos from opening every time you connect something with images:
