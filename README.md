@@ -88,6 +88,11 @@ Fix Launchpad
 ```
 defaults write com.apple.dock springboard-columns -int 6;defaults write com.apple.dock springboard-rows -int 4;defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
 ```
+
+Allow Apps from Any Developers
+```
+sudo spctl --master-disable
+```
 ## Finder
 
 Show all extensions:
