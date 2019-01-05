@@ -120,3 +120,20 @@ Install brew from http://brew.sh
 Install borgbackup from brew
 
 If you have a mouse with side buttons, install Sensible Side Buttons
+
+
+# windows-tips-tricks
+
+## Download LTSC Windows 10
+## Install KMS
+such as https://github.com/SystemRage/py-kms
+## Disable Optimize Drives
+## Disable Cortana
+gpedit
+https://betanews.com/2016/07/26/cortana-unkillable-in-windows-10-anniversary-update/
+## Disable Telemetry
+https://winaero.com/blog/how-to-disable-telemetry-and-data-collection-in-windows-10/
+http://www.thewindowsclub.com/windows-10-telemetry
+https://github.com/W4RH4WK/Debloat-Windows-10/tree/master/scripts"
+## Disable superfetch
+https://www.thewindowsclub.com/disable-superfetch-prefetch-ssd
