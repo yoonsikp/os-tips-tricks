@@ -93,6 +93,12 @@ Allow Apps from Any Developers
 ```
 sudo spctl --master-disable
 ```
+
+Install App with Outdated xattr:
+```
+xattr -c /path/to/app.app
+```
+
 ## Finder
 
 Show all extensions:
