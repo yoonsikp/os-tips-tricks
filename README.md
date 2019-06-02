@@ -35,6 +35,10 @@ Enable HiDPI resolutions:
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 ```
 
+Enable Subpixel antialiasing: https://github.com/Microsoft/vscode/issues/59887
+
+Install SF Mono fonts, and use as default in VS Code: https://medium.com/@sobstel/how-to-use-apples-sf-mono-font-in-visual-code-studio-4c99e44ed2cb
+
 ## Behaviour
 
 Change Key repeat	to fast in System Preferences
