@@ -1,7 +1,7 @@
-# macOS-tips-tricks
+# For macOS
 Just a list of commands and settings for whenever I do a fresh macOS installation, as well as fixes for common annoyances
 
-## Privacy
+### Privacy
 
 A few are taken from the macOS-Security-and-Privacy-Guide:
 
@@ -19,7 +19,7 @@ Disable Captive Portal:
 ```
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 ```
-## Display
+### Display
 Text Smoothing: Halfway in between subpixel antialiasing and greyscale antialiasing.
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 
@@ -39,7 +39,7 @@ Enable Subpixel antialiasing: https://github.com/Microsoft/vscode/issues/59887
 
 Install SF Mono fonts, and use as default in VS Code: https://medium.com/@sobstel/how-to-use-apples-sf-mono-font-in-visual-code-studio-4c99e44ed2cb
 
-## Behaviour
+### Behaviour
 
 Change Key repeat	to fast in System Preferences
 
@@ -72,7 +72,7 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool NO
 Disable automatic iDevice sync:
 Go to iTunes and check `Prevent iPods, iPhones, and iPads from syncing automatically`
 
-## Fixes
+### Fixes
 
 Disconnect from a broken SSH Connection:
 `Enter` + `~` + `.`
@@ -103,7 +103,7 @@ Install App with Outdated xattr:
 xattr -c /path/to/app.app
 ```
 
-## Finder
+### Finder
 
 Show all extensions:
 ```
@@ -117,7 +117,7 @@ Show Library in Home Folder:
 Click Home folder, then the View Options dialog box, select Show Library Folder.	
 
 
-## Software
+### Software
 
 Install brew from http://brew.sh
 
@@ -125,19 +125,25 @@ Install borgbackup from brew
 
 If you have a mouse with side buttons, install Sensible Side Buttons
 
+Install native display brightness controls (change f keys with functionflip)
 
-# windows-tips-tricks
+Disable mouse acceleration for mouse
 
-## Download LTSC Windows 10
-## Install KMS
+
+# For Windows
+
+### Download LTSC Windows 10
+### Install KMS
 such as https://github.com/SystemRage/py-kms
-## Disable Optimize Drives
-## Disable Cortana
+### Disable Optimize Drives
+### Disable Cortana
 gpedit
 https://betanews.com/2016/07/26/cortana-unkillable-in-windows-10-anniversary-update/
-## Disable Telemetry
+### Disable Telemetry
 https://winaero.com/blog/how-to-disable-telemetry-and-data-collection-in-windows-10/
 http://www.thewindowsclub.com/windows-10-telemetry
 https://github.com/W4RH4WK/Debloat-Windows-10/tree/master/scripts"
-## Disable superfetch
+### Disable superfetch
 https://www.thewindowsclub.com/disable-superfetch-prefetch-ssd
+### Disable mouse acceleration
+http://donewmouseaccel.blogspot.com/2010/03/markc-windows-7-mouse-acceleration-fix.html
