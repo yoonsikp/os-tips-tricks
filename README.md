@@ -145,7 +145,7 @@ http://www.thewindowsclub.com/windows-10-telemetry
 https://github.com/W4RH4WK/Debloat-Windows-10/tree/master/scripts"
 ### Disable KMS Telemetry
 Computer Configuration > Administrative Templates > All Settings > Turn off KMS Client Online AVS Validation > Enabled
-### Disable superfetch
+### Disable superfetch and prefetch (renamed to SysMain)
 https://www.thewindowsclub.com/disable-superfetch-prefetch-ssd
 ### Disable mouse acceleration
 http://donewmouseaccel.blogspot.com/2010/03/markc-windows-7-mouse-acceleration-fix.html
