@@ -151,5 +151,7 @@ https://github.com/W4RH4WK/Debloat-Windows-10/tree/master/scripts"
 Computer Configuration > Administrative Templates > All Settings > Turn off KMS Client Online AVS Validation > Enabled
 ### Disable superfetch and prefetch (renamed to SysMain)
 https://www.thewindowsclub.com/disable-superfetch-prefetch-ssd
+### Disable Program Compatibility Service
+### Disable Windows Search
 ### Disable mouse acceleration
 http://donewmouseaccel.blogspot.com/2010/03/markc-windows-7-mouse-acceleration-fix.html
