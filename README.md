@@ -140,8 +140,12 @@ such as https://github.com/SystemRage/py-kms
 gpedit
 https://betanews.com/2016/07/26/cortana-unkillable-in-windows-10-anniversary-update/
 ### Disable Telemetry
+o&o shutup10
+
 https://winaero.com/blog/how-to-disable-telemetry-and-data-collection-in-windows-10/
+
 http://www.thewindowsclub.com/windows-10-telemetry
+
 https://github.com/W4RH4WK/Debloat-Windows-10/tree/master/scripts"
 ### Disable KMS Telemetry
 Computer Configuration > Administrative Templates > All Settings > Turn off KMS Client Online AVS Validation > Enabled
