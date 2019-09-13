@@ -138,4 +138,6 @@ If you have a mouse with side buttons, install Sensible Side Buttons
 Install native display brightness controls (change f keys with functionflip)
 
 Disable mouse acceleration for mouse
-
+```
+defaults write -g com.apple.mouse.scaling -1
+```
