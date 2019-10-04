@@ -82,6 +82,8 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool NO
 Disable automatic iDevice sync:
 Go to iTunes and check `Prevent iPods, iPhones, and iPads from syncing automatically`
 
+
+Go to Keyboard Preferences -> Disable spelling correction, smart quotes.
 ### Fixes
 
 Disconnect from a broken SSH Connection:
