@@ -143,3 +143,8 @@ Disable mouse acceleration for mouse
 ```
 defaults write -g com.apple.mouse.scaling -1
 ```
+
+Install XCode tools
+```
+xcode-select --install
+```
