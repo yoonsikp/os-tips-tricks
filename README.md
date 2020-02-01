@@ -148,3 +148,7 @@ Install XCode tools
 ```
 xcode-select --install
 ```
+## for linux
+```
+sudo systemctl disable ondemand
+```
