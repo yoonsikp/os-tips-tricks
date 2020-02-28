@@ -155,9 +155,12 @@ sudo systemctl disable ondemand
 
 https://haydenjames.io/how-to-enable-unattended-upgrades-on-ubuntu-debian/
 
+dpkg-reconfigure -plow unattended-upgrades
+
 ```
 .hushlogin
 
 ```
 disable systemd networking
+
 disable snapd if you want
