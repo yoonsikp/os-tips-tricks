@@ -85,6 +85,10 @@ Go to iTunes and check `Prevent iPods, iPhones, and iPads from syncing automatic
 
 Go to Keyboard Preferences -> Disable spelling correction, smart quotes.
 ### Fixes
+Stop .DS_Store Pollution on Network drives:
+```
+defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
+```
 
 Disconnect from a broken SSH Connection:
 `Enter` + `~` + `.`
