@@ -168,3 +168,6 @@ dpkg-reconfigure -plow unattended-upgrades
 disable systemd networking
 
 disable snapd if you want
+
+## for windows
+Disable diagnostic policy service
