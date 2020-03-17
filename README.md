@@ -165,6 +165,9 @@ dpkg-reconfigure -plow unattended-upgrades
 .hushlogin
 
 ```
+
+use idle3 to disable head lock for WD RED.
+
 disable systemd networking
 
 disable snapd if you want
