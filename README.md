@@ -194,12 +194,16 @@ iface br0 inet static
 ```
 
 ### ZFS
+
+
 generate key
 ```
 dd if=/dev/urandom of=key bs=32 count=1
 
 xxd -p key | tr -d '\n' && echo
-
+```
+zpool will create gpt partition and align it to 2048 * 512 byte sector. Even if is 4096 byte physical sector
+```
 zpool create -o ashift=12 \
    -O acltype=posixacl -O dnodesize=auto -O normalization=formD \
    -O relatime=on -O xattr=sa -O encryption=aes-256-gcm \
