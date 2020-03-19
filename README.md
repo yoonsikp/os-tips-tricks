@@ -233,5 +233,9 @@ ssh root@198.57.27.183 'cat test' | sudo zfs recv tank/vms
 
 
 ```
+Consistent for nvme imports
+```
+sudo zpool import -d /dev/disk/by-id -aN
+```
 ## for windows
 Disable diagnostic policy service
