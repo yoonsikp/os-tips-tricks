@@ -171,6 +171,7 @@ use idle3 to disable head lock for WD RED.
 disable systemd networking
 
 disable snapd if you want
+sudo apt purge snapd 
 ### network
 ```
 
