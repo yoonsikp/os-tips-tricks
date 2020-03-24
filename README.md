@@ -194,6 +194,16 @@ iface br0 inet static
     gateway 192.168.0.1
 ```
 
+### fix shutdown button --> libvirtd
+
+
+nano /etc/systemd/logind.conf
+nano /usr/lib/systemd/logind.conf.d/unattended-upgrades-logind-maxdelay.conf
+
+
+InhibitorsMax=1
+
+
 ### ZFS
 
 
