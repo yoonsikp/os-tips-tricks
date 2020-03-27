@@ -75,6 +75,12 @@ Power Chime whenever your Power Supply is plugged in:
 defaults write com.apple.PowerChime ChimeOnAllHardware -bool true;open /System/Library/CoreServices/PowerChime.app &
 ```
 
+Startup Chime
+
+```
+sudo nvram StartupMute=%00
+```
+
 Stop Photos from opening every time you connect something with images:
 ```
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool NO
