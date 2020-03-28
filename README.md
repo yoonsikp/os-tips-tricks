@@ -221,6 +221,8 @@ nano /usr/lib/systemd/logind.conf.d/unattended-upgrades-logind-maxdelay.conf
 
 InhibitorsMax=1
 
+### fix ssh dns
+usedns No
 
 ### ZFS
 
