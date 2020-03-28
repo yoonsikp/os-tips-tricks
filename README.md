@@ -268,3 +268,4 @@ sudo zpool import -d /dev/disk/by-id -aN
 ```
 ## for windows
 Disable diagnostic policy service
+Disable certificate propgation service
