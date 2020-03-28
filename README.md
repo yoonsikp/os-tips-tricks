@@ -133,6 +133,12 @@ Stop mDNS pollution:
 sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
 ```
 
+Disable NETBIOS
+```
+sudo launchctl disable system/netbiosd
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.netbiosd.plist
+```
+
 Show all extensions:
 ```
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
