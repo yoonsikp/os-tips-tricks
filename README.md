@@ -269,3 +269,5 @@ sudo zpool import -d /dev/disk/by-id -aN
 ## for windows
 Disable diagnostic policy service
 Disable certificate propgation service
+Disable DNS Cache
+https://social.technet.microsoft.com/Forums/windows/en-US/a04284f9-cf27-4f37-82fe-31255f70625f/how-to-disable-windows-10-dns-cache-services?forum=win10itpronetworking
