@@ -281,3 +281,6 @@ https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/
 TCP/IP NETBIOS
 
 Enable Windows Firewall Outbound, all Network Discovery
+```
+REG add "HKLM\System\CurrentControlSet\Services\WinHttpAutoProxySvc" /v Start /t REG_DWORD /d 4 /f
+```
