@@ -127,6 +127,12 @@ xattr -c /path/to/app.app
 
 ### Finder
 
+Stop mDNS pollution:
+
+```
+sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist NoMulticastAdvertisements -bool YES
+```
+
 Show all extensions:
 ```
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
