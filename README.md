@@ -96,6 +96,11 @@ Stop .DS_Store Pollution on Network drives:
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
+Allow Ethernet to have same IP as WiFi:
+```
+https://github.com/CoolCyberBrain/toggleairport
+```
+
 Disconnect from a broken SSH Connection:
 `Enter` + `~` + `.`
 
