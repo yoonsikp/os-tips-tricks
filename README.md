@@ -279,3 +279,5 @@ https://windowsreport.com/how-to-disable-netbios/
 https://www.blackhillsinfosec.com/how-to-disable-llmnr-why-you-want-to/
 
 TCP/IP NETBIOS
+
+Enable Windows Firewall Outbound, all Network Discovery
