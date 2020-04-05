@@ -229,6 +229,8 @@ InhibitorsMax=1
 ### fix ssh dns
 usedns No
 
+Also, for scripting SSH, use -o BatchMode=yes -o ConnectTimeout=10
+
 ### ZFS
 
 
