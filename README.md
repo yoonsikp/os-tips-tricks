@@ -232,7 +232,7 @@ usedns No
 Also, for scripting SSH, use -o BatchMode=yes -o ConnectTimeout=10
 
 ### ZFS
-
+use `skdump` to analyze disks
 
 generate key
 ```
