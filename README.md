@@ -96,6 +96,12 @@ Stop .DS_Store Pollution on Network drives:
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
+Stop AirDrop from interfereing:
+
+```
+set Airdrop to No one
+```
+
 Allow Ethernet to have same IP as WiFi:
 ```
 https://github.com/CoolCyberBrain/toggleairport
