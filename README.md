@@ -50,6 +50,11 @@ defaults delete com.apple.notificationcenterui NSRequiresAquaSystemAppearance
 ```
 
 ### Behaviour
+Stop SSH from accepting password auth:
+```
+https://apple.stackexchange.com/questions/225231/how-to-use-ssh-keys-and-disable-password-authentication
+```
+
 
 Change Key repeat	to fast in System Preferences
 
