@@ -299,3 +299,9 @@ Enable Windows Firewall Outbound, all Network Discovery
 ```
 REG add "HKLM\System\CurrentControlSet\Services\WinHttpAutoProxySvc" /v Start /t REG_DWORD /d 4 /f
 ```
+
+Disable DNS client
+
+```
+REG add ... dnscache /v start /t 
+```
