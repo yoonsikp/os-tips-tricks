@@ -259,6 +259,7 @@ generate zvol
 ```
 zfs create rust/shady_vms
 chown yoonsik:yoonsik /rust/shady_vms
+chown -hR yoonsik:yoonsik /rust/shady_vms
 ```
 loading and unloading key + mounting
 ```
