@@ -199,6 +199,9 @@ dpkg-reconfigure -plow unattended-upgrades
 .hushlogin
 
 ```
+disable powersave:
+
+sudo update-rc.d ondemand disable
 
 use idle3 to disable head lock for WD RED.
 
