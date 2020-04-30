@@ -55,6 +55,7 @@ Stop SSH from accepting password auth:
 https://apple.stackexchange.com/questions/225231/how-to-use-ssh-keys-and-disable-password-authentication
 ```
 
+Enable Sudo with TouchID!
 
 Change Key repeat	to fast in System Preferences
 
