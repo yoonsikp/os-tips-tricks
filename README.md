@@ -5,6 +5,11 @@ Just a list of commands and settings for whenever I do a fresh macOS installatio
 
 A few are taken from the macOS-Security-and-Privacy-Guide:
 
+Disable iCloud Nag:
+```
+defaults delete com.apple.systempreferences AttentionPrefBundleIDs
+```
+
 Disable Spotlight Bing Search Suggestions in System Preferences, as well as Safari Suggestions in Safari Preferences.
 
 Disable opening "Safe" files in Safari.
