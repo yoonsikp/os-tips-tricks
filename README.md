@@ -320,3 +320,8 @@ Disable DNS client
 ```
 REG add ... dnscache /v start /t 
 ```
+Force SMB signing: Group policy editor
+
+```
+Microsoft network server: Digitally sign communications (always)
+```
