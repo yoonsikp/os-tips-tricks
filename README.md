@@ -101,6 +101,12 @@ Go to iTunes and check `Prevent iPods, iPhones, and iPads from syncing automatic
 
 
 Go to Keyboard Preferences -> Disable spelling correction, smart quotes.
+
+Disable code signing requirement:
+
+```
+sudo spctl --master-disable
+```
 ### Fixes
 Stop .DS_Store Pollution on Network drives:
 ```
