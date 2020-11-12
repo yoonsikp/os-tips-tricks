@@ -107,6 +107,12 @@ Disable code signing requirement:
 ```
 sudo spctl --master-disable
 ```
+
+Disable Library signed by Apple:
+```
+sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
+```
+
 ### Fixes
 Stop .DS_Store Pollution on Network drives:
 ```
