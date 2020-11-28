@@ -40,8 +40,6 @@ Enable HiDPI resolutions:
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 ```
 
-Enable Subpixel antialiasing: https://github.com/Microsoft/vscode/issues/59887
-
 Install SF Mono fonts, and use as default in VS Code: https://medium.com/@sobstel/how-to-use-apples-sf-mono-font-in-visual-code-studio-4c99e44ed2cb
 
 Enable Dark Menu Bar, but not Dark Mode:
@@ -79,17 +77,6 @@ defaults write NSGlobalDomain NSDocumentSaveNewDocumentsToCloud -bool false
 TextEdit Old Behaviour, starts by showing empty text file:
 ```
 defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
-```
-
-Power Chime whenever your Power Supply is plugged in:
-```
-defaults write com.apple.PowerChime ChimeOnAllHardware -bool true;open /System/Library/CoreServices/PowerChime.app &
-```
-
-Startup Chime
-
-```
-sudo nvram StartupMute=%00
 ```
 
 Stop Photos from opening every time you connect something with images:
@@ -144,16 +131,6 @@ sudo defaults write /Library/Preferences/com.apple.mDNSResponder.plist AlwaysApp
 sudo launchctl load /System/Library/LaunchDaemons/com.apple.mDNSResponder.plist
 ```
 
-Fix Launchpad
-```
-defaults write com.apple.dock springboard-columns -int 6;defaults write com.apple.dock springboard-rows -int 4;defaults write com.apple.dock ResetLaunchPad -bool TRUE;killall Dock
-```
-
-Allow Apps from Any Developers
-```
-sudo spctl --master-disable
-```
-
 Install App with Outdated xattr:
 ```
 xattr -c /path/to/app.app
@@ -204,6 +181,11 @@ Install XCode tools
 ```
 xcode-select --install
 ```
+
+
+Change login wallpaper
+https://macreports.com/how-to-change-the-login-screen-background-in-macos-big-sur/comment-page-1/?unapproved=155065&moderation-hash=0cd1c2b325f3e1bcf98bad8a5333304c#comment-155065
+
 ## for linux
 ```
 sudo systemctl disable ondemand
