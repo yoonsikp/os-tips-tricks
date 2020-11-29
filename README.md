@@ -25,23 +25,13 @@ Disable Captive Portal:
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 ```
 ### Display
-Text Smoothing: Halfway in between subpixel antialiasing and greyscale antialiasing.
-defaults -currentHost write -globalDomain AppleFontSmoothing -int 2
 
-Disable Ambient Display: (http://www.mackungfu.org/el-capitan-s-crazy-gamma-adjustments-photographers-beware)
-
-```
-cd /System/Library/PrivateFrameworks/AmbientDisplay.framework/Versions/A/XPCServices/com.apple.AmbientDisplayAgent.xpc/Contents/MacOS/
-
-sudo mv com.apple.AmbientDisplayAgent _com.apple.AmbientDisplayAgent
-```
+Disable Auto Brightness Display
 Enable HiDPI resolutions:
 ```
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 ```
-
-Install SF Mono fonts, and use as default in VS Code: https://medium.com/@sobstel/how-to-use-apples-sf-mono-font-in-visual-code-studio-4c99e44ed2cb
-
+Use JetBrains Mono as default in VS Code
 Enable Dark Menu Bar, but not Dark Mode:
 
 ```
@@ -60,14 +50,9 @@ https://apple.stackexchange.com/questions/225231/how-to-use-ssh-keys-and-disable
 
 Enable Sudo with TouchID!
 
-Change Key repeat	to fast in System Preferences
+Change Key repeat to fast in System Preferences
 
 Disable the Rotate gesture for the Trackpad in System Preferences
-
-Show Hidden Files:
-```
-defaults write com.apple.finder AppleShowAllFiles YES
-```
 
 Globally disable auto-saving Documents to iCloud:
 ```
@@ -89,16 +74,7 @@ Go to iTunes and check `Prevent iPods, iPhones, and iPads from syncing automatic
 
 Go to Keyboard Preferences -> Disable spelling correction, smart quotes.
 
-Disable code signing requirement:
-
-```
-sudo spctl --master-disable
-```
-
-Disable Library signed by Apple:
-```
-sudo defaults write /Library/Preferences/com.apple.security.libraryvalidation.plist DisableLibraryValidation -bool true
-```
+Disable code signing: https://www.naut.ca/blog/2020/11/13/forbidden-commands-to-liberate-macos/
 
 ### Fixes
 Stop .DS_Store Pollution on Network drives:
