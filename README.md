@@ -5,11 +5,6 @@ Just a list of commands and settings for whenever I do a fresh macOS installatio
 
 A few are taken from the macOS-Security-and-Privacy-Guide:
 
-Disable iCloud Nag:
-```
-defaults delete com.apple.systempreferences AttentionPrefBundleIDs
-```
-
 Disable Spotlight Bing Search Suggestions in System Preferences, as well as Safari Suggestions in Safari Preferences.
 
 Disable opening "Safe" files in Safari.
@@ -17,8 +12,6 @@ Disable opening "Safe" files in Safari.
 Enable the Develop menu safari( useful for opening pages in Chrome, go to Develop-> Open Page With)
 
 Enable Secure Keyboard Entry in Terminal.
-
-Disable loading Remote Images in Mail
 
 Disable Captive Portal:
 ```
@@ -71,7 +64,6 @@ defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool NO
 Disable automatic iDevice sync:
 Go to iTunes and check `Prevent iPods, iPhones, and iPads from syncing automatically`
 
-
 Go to Keyboard Preferences -> Disable spelling correction, smart quotes.
 
 Disable code signing: https://www.naut.ca/blog/2020/11/13/forbidden-commands-to-liberate-macos/
@@ -82,7 +74,7 @@ Stop .DS_Store Pollution on Network drives:
 defaults write com.apple.desktopservices DSDontWriteNetworkStores -bool TRUE
 ```
 
-Stop AirDrop from interfereing:
+Stop AirDrop from interfering:
 
 ```
 set Airdrop to No one
