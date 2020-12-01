@@ -57,6 +57,11 @@ TextEdit Old Behaviour, starts by showing empty text file:
 defaults write com.apple.TextEdit NSShowAppCentricOpenPanelInsteadOfUntitledFile -bool false
 ```
 
+Terminal: follow mouse focus
+```
+defaults write com.apple.Terminal FocusFollowsMouse -boolean YES
+```
+
 Stop Photos from opening every time you connect something with images:
 ```
 defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool NO
