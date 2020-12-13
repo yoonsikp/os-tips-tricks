@@ -109,6 +109,8 @@ Install App with Outdated xattr:
 xattr -c /path/to/app.app
 ```
 
+Safari disable Swap processes on cross site
+
 ### Finder
 
 Stop mDNS pollution:
