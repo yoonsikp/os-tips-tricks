@@ -111,6 +111,7 @@ xattr -c /path/to/app.app
 
 Safari disable Swap processes on cross site
 
+sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.GameController.gamecontrollerd.plist
 ### Finder
 
 Stop mDNS pollution:
