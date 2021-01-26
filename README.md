@@ -157,7 +157,9 @@ Install XCode tools
 ```
 xcode-select --install
 ```
+Disable Office 2016 Nag:
 
+https://apple.stackexchange.com/a/365377
 
 Change login wallpaper
 https://macreports.com/how-to-change-the-login-screen-background-in-macos-big-sur/comment-page-1/?unapproved=155065&moderation-hash=0cd1c2b325f3e1bcf98bad8a5333304c#comment-155065
