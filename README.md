@@ -137,6 +137,10 @@ sudo defaults write /Library/Preferences/com.apple.NetworkBrowser EnableODiskBro
 Show Library in Home Folder:
 Click Home folder, then the View Options dialog box, select Show Library Folder.	
 
+Reset Quick Look Thumbnails:
+```
+qlmanage -r cache
+```
 
 ### Software
 
