@@ -20,6 +20,12 @@ sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.c
 In safari: 
 Disable swap processes on cross site navigation
 Disable Web HDR
+
+Disable desktop:
+
+defaults write com.apple.finder CreateDesktop false
+killall Finder
+
 ### Display
 
 Disable Auto Brightness Display
