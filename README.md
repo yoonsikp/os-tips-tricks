@@ -17,6 +17,9 @@ Disable Captive Portal:
 ```
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 ```
+In safari: 
+Disable swap processes on cross site navigation
+Disable Web HDR
 ### Display
 
 Disable Auto Brightness Display
