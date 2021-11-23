@@ -82,6 +82,8 @@ Go to Keyboard Preferences -> Disable spelling correction, smart quotes.
 
 Disable code signing: https://www.naut.ca/blog/2020/11/13/forbidden-commands-to-liberate-macos/
 
+Stop App store notifications: https://apple.stackexchange.com/questions/409093/how-can-i-permanently-disable-app-store-notifications-in-big-sur
+
 ### Fixes
 Stop .DS_Store Pollution on Network drives:
 ```
