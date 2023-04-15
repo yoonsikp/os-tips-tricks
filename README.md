@@ -238,6 +238,8 @@ nano /usr/lib/systemd/logind.conf.d/unattended-upgrades-logind-maxdelay.conf
 
 InhibitorsMax=1
 
+### disable ModemManager
+
 ### fix ssh dns
 usedns No
 
