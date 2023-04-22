@@ -9,7 +9,7 @@ Disable Spotlight Bing Search Suggestions in System Preferences, as well as Safa
 
 Disable opening "Safe" files in Safari.
 
-Enable the Develop menu safari( useful for opening pages in Chrome, go to Develop-> Open Page With)
+Enable the Develop menu safari (useful for opening pages in Chrome, go to Develop-> Open Page With)
 
 Enable Secure Keyboard Entry in Terminal.
 
@@ -17,32 +17,24 @@ Disable Captive Portal:
 ```
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 ```
-In safari: 
-Disable swap processes on cross site navigation
-Disable Web HDR
+In safari: Disable Web HDR
 
-Disable desktop:
-
+Disable desktop icons:
+```
 defaults write com.apple.finder CreateDesktop false
 killall Finder
+```
 
 ### Display
 
 Disable Auto Brightness Display
+
 Enable HiDPI resolutions:
 ```
 sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayResolutionEnabled -bool true
 ```
+
 Use JetBrains Mono as default in VS Code
-Enable Dark Menu Bar, but not Dark Mode:
-
-```
-defaults write -g NSRequiresAquaSystemAppearance -bool Yes
-defaults write com.apple.notificationcenterui NSRequiresAquaSystemAppearance -bool No
-
-defaults delete -g NSRequiresAquaSystemAppearance
-defaults delete com.apple.notificationcenterui NSRequiresAquaSystemAppearance
-```
 
 ### Behaviour
 Stop SSH from accepting password auth:
@@ -86,8 +78,11 @@ Stop App store notifications: https://apple.stackexchange.com/questions/409093/h
 
 Stop macOS from waking up every 3 minutes (you can check logs `pmset -g log | grep -w Charge`): https://discussions.apple.com/thread/252276065
  
+Archive macOS App Store apps:
 
-
+```
+getconf DARWIN_USER_CACHE_DIR
+```
 
 ### Fixes
 Stop .DS_Store Pollution on Network drives:
