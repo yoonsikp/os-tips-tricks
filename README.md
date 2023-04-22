@@ -77,6 +77,11 @@ Disable code signing: https://www.naut.ca/blog/2020/11/13/forbidden-commands-to-
 Stop App store notifications: https://apple.stackexchange.com/questions/409093/how-can-i-permanently-disable-app-store-notifications-in-big-sur
 
 Stop macOS from waking up every 3 minutes (you can check logs `pmset -g log | grep -w Charge`): https://discussions.apple.com/thread/252276065
+```
+sudo pmset -a tcpkeepalive 0
+sudo pmset -a powernap 0
+```
+
  
 Archive macOS App Store apps:
 
