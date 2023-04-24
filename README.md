@@ -82,7 +82,9 @@ sudo pmset -a tcpkeepalive 0
 sudo pmset -a powernap 0
 ```
 
- 
+In System Preferences -> General -> Enable "Ask to save before closing documents"
+
+
 Archive macOS App Store apps:
 
 ```
