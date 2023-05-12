@@ -160,6 +160,14 @@ Reset Quick Look Thumbnails:
 qlmanage -r cache
 ```
 
+Found this tweet, https://twitter.com/vatsal_manot/status/1409264360594149380?s=20
+Basically suggests the following to disable suggestd.
+
+"cd ~/Desktop && touch Suggestions"
+"Get Info" → set "Locked" to on
+Delete ~/Library/Suggestions
+Drag Suggestions (the file) into ~/Library
+
 ### Software
 
 Install brew from http://brew.sh
