@@ -17,7 +17,6 @@ Disable Captive Portal:
 ```
 sudo defaults write /Library/Preferences/SystemConfiguration/com.apple.captive.control Active -bool false
 ```
-In safari: Disable Web HDR
 
 Disable desktop icons:
 ```
@@ -80,10 +79,10 @@ Stop macOS from waking up every 3 minutes (you can check logs `pmset -g log | gr
 ```
 sudo pmset -a tcpkeepalive 0
 sudo pmset -a powernap 0
+sudo pmset -g assertions
 ```
 
 In System Preferences -> General -> Enable "Ask to save before closing documents"
-
 
 Archive macOS App Store apps:
 
@@ -127,8 +126,6 @@ Install App with Outdated xattr:
 xattr -c /path/to/app.app
 ```
 
-Safari disable Swap processes on cross site
-
 sudo launchctl unload -w /System/Library/LaunchDaemons/com.apple.GameController.gamecontrollerd.plist
 ### Finder
 
@@ -148,10 +145,12 @@ Show all extensions:
 ```
 defaults write NSGlobalDomain AppleShowAllExtensions -bool true
 ```
+
 Get rid of Remote Disc
 ```
 sudo defaults write /Library/Preferences/com.apple.NetworkBrowser EnableODiskBrowsing -bool false
 ```
+
 Show Library in Home Folder:
 Click Home folder, then the View Options dialog box, select Show Library Folder.	
 
@@ -176,9 +175,7 @@ Install borgbackup from brew
 
 If you have a mouse with side buttons, install Sensible Side Buttons
 
-Install native display brightness controls (change f keys with functionflip)
-
-Disable mouse acceleration for mouse
+Disable mouse acceleration for mouse?
 ```
 defaults write -g com.apple.mouse.scaling -1
 ```
@@ -187,6 +184,7 @@ Install XCode tools
 ```
 xcode-select --install
 ```
+
 Disable Office 2016 Nag:
 
 https://apple.stackexchange.com/a/365377
