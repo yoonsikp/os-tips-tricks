@@ -90,6 +90,11 @@ Archive macOS App Store apps:
 getconf DARWIN_USER_CACHE_DIR
 ```
 
+Change Behaviour of "Search with Google" to the default browser:
+
+https://apple.stackexchange.com/a/75531
+
+
 ### Fixes
 Stop .DS_Store Pollution on Network drives:
 ```
