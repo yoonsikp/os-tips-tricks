@@ -303,6 +303,13 @@ Consistent for nvme imports
 ```
 sudo zpool import -d /dev/disk/by-id -aN
 ```
+## for NAS
+add kernel parameter (guest): `mitigations=off`
+
+pin host cpu to 2,3
+
+add kernel parameter (host): `isolcpus=2,3`
+
 ## for windows
 Disable diagnostic policy service
 Disable certificate propgation service
