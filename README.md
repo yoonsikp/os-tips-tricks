@@ -227,6 +227,14 @@ Disable slow shutdown from LVM manager:
 `
 sudo systemctl disable lvm2-monitor.service
 `
+
+Install hd-idle, allow shutdown of idle drives:
+
+```
+sudo nano /etc/default/hd-idle
+HD_IDLE_OPTS="-i 10"
+```
+
 ### network
 ```
 
