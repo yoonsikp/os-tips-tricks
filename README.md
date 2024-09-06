@@ -210,7 +210,7 @@ dpkg-reconfigure -plow unattended-upgrades
 .hushlogin
 
 ```
-disable powersave:
+disable powersave (update 2024, intel driver powersave feature is good, does not improve performance to disable it):
 
 sudo update-rc.d ondemand disable
 
@@ -220,6 +220,13 @@ disable systemd networking
 
 disable snapd if you want
 sudo apt purge snapd 
+
+sudo systemctl disable ondemand
+
+Disable slow shutdown from LVM manager:
+`
+sudo systemctl disable lvm2-monitor.service
+`
 ### network
 ```
 
@@ -303,6 +310,8 @@ Consistent for nvme imports
 ```
 sudo zpool import -d /dev/disk/by-id -aN
 ```
+
+
 ## for NAS
 add kernel parameter (guest): `mitigations=off`
 
