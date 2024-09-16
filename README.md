@@ -356,3 +356,10 @@ Force SMB signing: Group policy editor
 ```
 Microsoft network server: Digitally sign communications (always)
 ```
+
+
+DISABLE FAST STARTUP for wake on lan support:
+
+```
+https://help.uaudio.com/hc/en-us/articles/213195423-How-To-Disable-Fast-Startup-in-Windows
+```
