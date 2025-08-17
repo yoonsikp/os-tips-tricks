@@ -221,53 +221,6 @@ HD_IDLE_OPTS="-i 10"
 
 Also, for scripting SSH, use -o BatchMode=yes -o ConnectTimeout=10
 
-### ZFS
-use `skdump` to analyze disks
-
-generate key
-```
-dd if=/dev/urandom of=key bs=32 count=1
-
-xxd -p key | tr -d '\n' && echo
-```
-zpool will create gpt partition and align it to 2048 * 512 byte sector. Even if is 4096 byte physical sector
-```
-zpool create -o ashift=12 \
-   -O acltype=posixacl -O dnodesize=auto -O normalization=formD \
-   -O relatime=on -O xattr=sa -O encryption=aes-256-gcm \
-   -O keylocation=prompt -O keyformat=hex \
-   rust mirror sda3 sdb3
-     
-```
-generate zvol
-```
-zfs create rust/shady_vms
-chown yoonsik:yoonsik /rust/shady_vms
-chown -hR yoonsik:yoonsik /rust/shady_vms
-```
-loading and unloading key + mounting
-```
-zfs load-key tank
-zfs mount tank
-zfs mount -a
-
-zfs umount tank
-zfs unload-key tank
-```
-recieving things over ssh
-```
-sudo zfs send -Rw tank/vms | ssh root@198.57.27.183 'cat - > test'
-
-ssh root@198.57.27.183 'cat test' | sudo zfs recv tank/vms
-
-
-```
-Consistent for nvme imports
-```
-sudo zpool import -d /dev/disk/by-id -aN
-```
-
-
 ## for NAS
 add kernel parameter (guest): `mitigations=off`
 
