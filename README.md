@@ -198,10 +198,6 @@ Change login wallpaper
 https://macreports.com/how-to-change-the-login-screen-background-in-macos-big-sur/comment-page-1/?unapproved=155065&moderation-hash=0cd1c2b325f3e1bcf98bad8a5333304c#comment-155065
 
 ## for linux
-```
-sudo systemctl disable ondemand
-```
-
 https://haydenjames.io/how-to-enable-unattended-upgrades-on-ubuntu-debian/
 
 dpkg-reconfigure -plow unattended-upgrades
@@ -210,25 +206,13 @@ dpkg-reconfigure -plow unattended-upgrades
 .hushlogin
 
 ```
-disable powersave (update 2024, intel driver powersave feature is good, does not improve performance to disable it):
-
-sudo update-rc.d ondemand disable
-
-use idle3 to disable head lock for WD RED.
-
-disable systemd networking
-
-disable snapd if you want
-sudo apt purge snapd 
-
-sudo systemctl disable ondemand
 
 Disable slow shutdown from LVM manager:
 `
 sudo systemctl disable lvm2-monitor.service
 `
 
-Install hd-idle, allow shutdown of idle drives:
+Use idle3 to disable head lock for WD RED. Then install hd-idle, allow shutdown of idle drives:
 
 ```
 sudo nano /etc/default/hd-idle
