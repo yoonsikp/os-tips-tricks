@@ -219,36 +219,7 @@ sudo nano /etc/default/hd-idle
 HD_IDLE_OPTS="-i 10"
 ```
 
-### network
-```
 
-# interfaces(5) file used by ifup(8) and ifdown(8)
-# Include files from /etc/network/interfaces.d:
-source-directory /etc/network/interfaces.d
-
-allow-hotplug eno1
-auto eno1
-iface eno1 inet manual
-    post-up ethtool -K eno1 tx off rx off gso off gro off tso off
-
-auto br0
-iface br0 inet static
-    bridge_ports eno1
-    bridge_stp off
-    bridge_fd 0
-    bridge_maxwait 0
-    address 192.168.0.100/24
-    gateway 192.168.0.1
-```
-
-### fix shutdown button --> libvirtd
-
-
-nano /etc/systemd/logind.conf
-nano /usr/lib/systemd/logind.conf.d/unattended-upgrades-logind-maxdelay.conf
-
-
-InhibitorsMax=1
 
 ### disable ModemManager
 
