@@ -220,9 +220,6 @@ HD_IDLE_OPTS="-i 10"
 ```
 
 
-
-### disable ModemManager
-
 ### fix ssh dns
 usedns No
 
