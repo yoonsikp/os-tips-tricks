@@ -219,10 +219,6 @@ sudo nano /etc/default/hd-idle
 HD_IDLE_OPTS="-i 10"
 ```
 
-
-### fix ssh dns
-usedns No
-
 Also, for scripting SSH, use -o BatchMode=yes -o ConnectTimeout=10
 
 ### ZFS
