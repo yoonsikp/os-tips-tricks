@@ -36,6 +36,8 @@ sudo defaults write /Library/Preferences/com.apple.windowserver.plist DisplayRes
 Use JetBrains Mono as default in VS Code
 
 ### Behaviour
+Toggle Ask to keep changes when closing documents to On.
+
 Stop SSH from accepting password auth:
 ```
 https://apple.stackexchange.com/questions/225231/how-to-use-ssh-keys-and-disable-password-authentication
